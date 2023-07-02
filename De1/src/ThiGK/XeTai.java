@@ -1,19 +1,19 @@
 package ThiGK;
 
 public class XeTai extends Xe{
-	private int giaVe;
+	private int giaChuyen;
 
-	public int getGiaVe() {
-		return giaVe;
+	public int getGiaChuyen() {
+		return giaChuyen;
 	}
 
-	public void setGiaVe(int giaVe) {
-		this.giaVe = giaVe;
+	public void setGiaChuyen(int giaChuyen) {
+		this.giaChuyen = giaChuyen;
 	}
 
-	public XeTai(String maChuyen, String tenTaiXe, String soXe, int soChuyen, int giaVe) {
+	public XeTai(String maChuyen, String tenTaiXe, String soXe, int soChuyen, int giaChuyen) {
 		super(maChuyen, tenTaiXe, soXe, soChuyen);
-		this.giaVe = giaVe;
+		this.giaChuyen = giaChuyen;
 	}
 
 	public XeTai() {
@@ -25,6 +25,22 @@ public class XeTai extends Xe{
 		super(maChuyen, tenTaiXe, soXe, soChuyen);
 		// TODO Auto-generated constructor stub
 	}
+	
+	
+	public void thanhTien() {
+		int tien= giaChuyen * giaChuyen;
+	}
+
+	public int tinhTien() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public String toString() {
+		return "XeTai [giaChuyen=" + giaChuyen + ", tinhTien()=" + tinhTien() + "]";
+	}
+	
 	
 	
 }
